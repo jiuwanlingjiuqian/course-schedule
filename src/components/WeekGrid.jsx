@@ -94,7 +94,7 @@ export default function WeekGrid({ onCellClick, onCourseClick }) {
           z-index: 5;
         }
         .time-header {
-          width: var(--time-column-width);
+          width: 38px;
           flex-shrink: 0;
         }
         .day-header {
@@ -129,7 +129,7 @@ export default function WeekGrid({ onCellClick, onCourseClick }) {
         }
 
         .time-column {
-          width: var(--time-column-width);
+          width: 38px;
           flex-shrink: 0;
         }
         .time-slot {
@@ -137,7 +137,7 @@ export default function WeekGrid({ onCellClick, onCourseClick }) {
           display: flex;
           align-items: flex-start;
           justify-content: center;
-          font-size: 10px;
+          font-size: 9px;
           color: rgba(255,255,255,0.55);
           padding-top: 2px;
         }
@@ -151,6 +151,7 @@ export default function WeekGrid({ onCellClick, onCourseClick }) {
           flex: 1;
           position: relative;
           border-left: 1px solid rgba(255,255,255,0.04);
+          overflow: visible;
         }
         .day-column.today-col {
           background: rgba(94,234,180,0.03);
