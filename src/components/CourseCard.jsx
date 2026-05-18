@@ -19,11 +19,10 @@ export default function CourseCard({ course, style, onClick }) {
         .course-card {
           position: absolute;
           left: 2px;
-          min-width: 52px;
+          min-width: 60px;
           border-radius: 6px;
           padding: 3px 5px;
           color: #fff;
-          overflow: visible;
           cursor: pointer;
           box-shadow: 0 2px 8px rgba(0,0,0,0.3);
           z-index: 10;
@@ -44,16 +43,12 @@ export default function CourseCard({ course, style, onClick }) {
           font-weight: 600;
           line-height: 1.3;
           white-space: nowrap;
-          word-break: keep-all;
-          overflow-wrap: normal;
         }
         .course-detail {
           font-size: 9px;
           opacity: 0.85;
           line-height: 1.3;
           white-space: nowrap;
-          word-break: keep-all;
-          overflow-wrap: normal;
         }
         .week-badge {
           display: inline-block;
