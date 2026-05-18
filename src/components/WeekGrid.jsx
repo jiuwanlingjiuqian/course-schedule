@@ -77,7 +77,7 @@ export default function WeekGrid({ onCellClick, onCourseClick }) {
         .week-grid-wrapper {
           margin: 12px;
           border-radius: var(--radius-md);
-          overflow: hidden;
+          overflow: visible;
           animation: fadeSlideIn 0.6s ease-out 0.15s both;
         }
         @keyframes fadeSlideIn {
@@ -92,9 +92,10 @@ export default function WeekGrid({ onCellClick, onCourseClick }) {
           top: 0;
           background: rgba(5,30,20,0.6);
           z-index: 5;
+          border-radius: var(--radius-md) var(--radius-md) 0 0;
         }
         .time-header {
-          width: 38px;
+          width: 36px;
           flex-shrink: 0;
         }
         .day-header {
@@ -129,7 +130,7 @@ export default function WeekGrid({ onCellClick, onCourseClick }) {
         }
 
         .time-column {
-          width: 38px;
+          width: 36px;
           flex-shrink: 0;
         }
         .time-slot {
