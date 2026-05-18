@@ -6,6 +6,7 @@ export default function FloatingBg() {
         loop
         muted
         playsInline
+        preload="auto"
         src={`${import.meta.env.BASE_URL}wallpaper.mp4`}
       />
       <style>{`
@@ -22,8 +23,8 @@ export default function FloatingBg() {
         }
         .wallpaper-bg video {
           height: 100%;
-          width: auto;
-          object-fit: contain;
+          width: 100%;
+          object-fit: cover;
         }
       `}</style>
     </div>
