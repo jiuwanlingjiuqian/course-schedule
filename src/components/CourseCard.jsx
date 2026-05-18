@@ -19,7 +19,7 @@ export default function CourseCard({ course, style, onClick }) {
         .course-card {
           position: absolute;
           left: 2px;
-          min-width: 50px;
+          right: 2px;
           border-radius: 6px;
           padding: 3px 4px;
           color: #fff;
@@ -29,7 +29,7 @@ export default function CourseCard({ course, style, onClick }) {
           animation: cardPopIn 0.35s ease-out;
           word-break: keep-all;
           overflow-wrap: break-word;
-          line-height: 1.25;
+          overflow: hidden;
         }
         @keyframes cardPopIn {
           from { transform: scale(0.85); opacity: 0; }
@@ -43,10 +43,12 @@ export default function CourseCard({ course, style, onClick }) {
         .course-name {
           font-size: 11px;
           font-weight: 600;
+          line-height: 1.25;
         }
         .course-detail {
           font-size: 9px;
           opacity: 0.85;
+          line-height: 1.25;
           margin-top: 1px;
         }
         .week-badge {
