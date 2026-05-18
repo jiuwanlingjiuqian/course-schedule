@@ -215,11 +215,11 @@ export default function Schedule() {
         .modal-content {
           width: 100%;
           max-width: 500px;
-          max-height: 82vh;
+          max-height: 60vh;
           overflow-y: auto;
-          padding: 24px 20px;
+          padding: 20px 16px;
           border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-          padding-bottom: calc(24px + env(safe-area-inset-bottom));
+          padding-bottom: calc(90px + env(safe-area-inset-bottom));
           border: 1px solid rgba(255,255,255,0.1);
           border-bottom: none;
           animation: slideUp 0.3s ease-out;
@@ -227,19 +227,19 @@ export default function Schedule() {
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 
         .modal-content h3 {
-          margin-bottom: 16px;
+          margin-bottom: 12px;
           font-size: var(--font-size-lg);
         }
         .modal-content label {
           display: block;
           font-size: var(--font-size-sm);
           color: var(--text-secondary);
-          margin: 10px 0 4px;
+          margin: 8px 0 3px;
         }
         .modal-content input,
         .modal-content select {
           width: 100%;
-          padding: 10px 12px;
+          padding: 8px 10px;
           border-radius: var(--radius-sm);
           background: rgba(255,255,255,0.08);
           color: var(--text-primary);
@@ -261,7 +261,7 @@ export default function Schedule() {
 
         .color-picker { display: flex; gap: 10px; margin-top: 4px; }
         .color-dot {
-          width: 32px; height: 32px;
+          width: 28px; height: 28px;
           border-radius: 50%;
           border: 3px solid transparent;
           transition: all 0.2s;
@@ -271,7 +271,7 @@ export default function Schedule() {
 
         .form-actions {
           display: flex; gap: 10px;
-          margin-top: 20px;
+          margin-top: 16px;
           justify-content: flex-end;
         }
         .btn-save {
