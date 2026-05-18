@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import BottomNav from './components/BottomNav';
+import FloatingBg from './components/FloatingBg';
 import Schedule from './pages/Schedule';
 import Import from './pages/Import';
 import Settings from './pages/Settings';
@@ -10,6 +11,7 @@ export default function App() {
 
   return (
     <div className="app-container">
+      <FloatingBg />
       <main className="app-main">
         <TransitionGroup component={null}>
           <CSSTransition key={location.pathname} timeout={300} classNames="page">
@@ -30,13 +32,13 @@ export default function App() {
           max-width: 500px;
           margin: 0 auto;
           position: relative;
-          z-index: 1;
         }
         .app-main {
           flex: 1;
           overflow-y: auto;
           padding-bottom: 12px;
           position: relative;
+          z-index: 1;
         }
         .bottom-nav {
           display: flex;
