@@ -18,10 +18,10 @@ export default function CourseCard({ course, style, onClick }) {
       <style>{`
         .course-card {
           position: absolute;
-          left: 2px;
-          right: 2px;
-          border-radius: 8px;
-          padding: 6px 8px;
+          left: 1px;
+          right: 1px;
+          border-radius: 6px;
+          padding: 3px 4px;
           color: #fff;
           overflow: hidden;
           cursor: pointer;
@@ -39,23 +39,28 @@ export default function CourseCard({ course, style, onClick }) {
         }
 
         .course-name {
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 600;
-          line-height: 1.3;
+          line-height: 1.2;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .course-detail {
-          font-size: 10px;
+          font-size: 9px;
           opacity: 0.85;
-          margin-top: 1px;
-          line-height: 1.3;
+          line-height: 1.2;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .week-badge {
           display: inline-block;
-          font-size: 9px;
+          font-size: 8px;
           background: rgba(255,255,255,0.3);
-          padding: 0 3px;
-          border-radius: 3px;
-          margin-left: 3px;
+          padding: 0 2px;
+          border-radius: 2px;
+          margin-left: 2px;
           font-weight: 400;
         }
       `}</style>
