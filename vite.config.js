@@ -8,15 +8,12 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,mp4,svg}'],
-      },
       manifest: {
         name: '我的课程表',
         short_name: '课程表',
         description: '无广告的纯净课程表应用',
-        start_url: '/course-schedule/',
-        scope: '/course-schedule/',
+        start_url: '.',
+        scope: '.',
         theme_color: '#0a3d25',
         background_color: '#000000',
         display: 'standalone',
@@ -26,13 +23,11 @@ export default defineConfig({
             src: 'icons/icon-192.svg',
             sizes: '192x192',
             type: 'image/svg+xml',
-            purpose: 'any maskable',
           },
           {
             src: 'icons/icon-512.svg',
             sizes: '512x512',
             type: 'image/svg+xml',
-            purpose: 'any maskable',
           },
         ],
       },
