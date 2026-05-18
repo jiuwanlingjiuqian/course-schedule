@@ -6,7 +6,7 @@ export default function FloatingBg() {
         loop
         muted
         playsInline
-        src="/wallpaper.mp4"
+        src={`${import.meta.env.BASE_URL}wallpaper.mp4`}
       />
       <style>{`
         .wallpaper-bg {
