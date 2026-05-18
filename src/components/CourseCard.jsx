@@ -18,16 +18,17 @@ export default function CourseCard({ course, style, onClick }) {
       <style>{`
         .course-card {
           position: absolute;
-          left: 1px;
-          right: 1px;
+          left: 2px;
+          min-width: 52px;
           border-radius: 6px;
-          padding: 3px 4px;
+          padding: 3px 5px;
           color: #fff;
-          overflow: hidden;
+          overflow: visible;
           cursor: pointer;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-          z-index: 2;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+          z-index: 10;
           animation: cardPopIn 0.35s ease-out;
+          white-space: nowrap;
         }
         @keyframes cardPopIn {
           from { transform: scale(0.85); opacity: 0; }
@@ -41,18 +42,18 @@ export default function CourseCard({ course, style, onClick }) {
         .course-name {
           font-size: 11px;
           font-weight: 600;
-          line-height: 1.2;
+          line-height: 1.3;
           white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
+          word-break: keep-all;
+          overflow-wrap: normal;
         }
         .course-detail {
           font-size: 9px;
           opacity: 0.85;
-          line-height: 1.2;
+          line-height: 1.3;
           white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
+          word-break: keep-all;
+          overflow-wrap: normal;
         }
         .week-badge {
           display: inline-block;
